@@ -1,0 +1,8 @@
+Hex:
+sudo avrdude -c avrispmkII -p attiny85 -U flash:w:.pioenvs/attiny85/firmware.hex
+
+Turning on DebugWire:
+-U lfuse:w:0xe2:m -U hfuse:w:0xbd:m -U efuse:w:0xff:m
+
+sudo avrdude -c dragon_dw -p attiny85 -U flash:w:.pioenvs/attiny85/firmware.hex
+
